@@ -14,13 +14,13 @@ void parpadeo (int time) {
   digitalWrite(13,LOW);
   delay(time);
 }
-  
+  //suma
 */
 void suma(int value) {
   int suma=value+100;
   return suma;
 }
-  
+  //Ingresar por teclado
   String instring ="" ; 
   void setup() {
   Serial.begin(9600);
@@ -35,7 +35,12 @@ void suma(int value) {
   }
   if (inChar == '\n') {
   Serial.print("Value:");
-  Serial
-  
+  Serial.println(inString.toInt());
+  Serial.print("Strinf: ");
+  Serial.println(inString);
+  inString = "";
+  }
+  }
+  }
 **/
 
